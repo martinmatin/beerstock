@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style/home.css">
+</head>
+<body>
+
+<div  class="top">
+        <a href="/home"><img src="/static/images/brewery2.png"  alt="beer" class="header"></a>
+
+
+    </div>
+
+% if defined('name'):
+
+    <h1>Welcome {{name}}!</h1>
+
+ % end   
+
+ <div id="bloc"> 
+</div>
+ <div id="container">
+    <a href="/login"><img src="/static/images/logo1.png"></a>
+    <a href=""><img src="/static/images/logo2.png"></a>
+    <a href="/signup.html"><img src="/static/images/logo3.png"></a>
+</div>
+
+ <div id="bloc"> 
+</div>
+
+
+</body>
+
+
+</html>
+
+
+

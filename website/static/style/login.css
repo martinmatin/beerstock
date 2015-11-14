@@ -1,5 +1,5 @@
 body {
-	background: url('file:///D:/ECAM/Programmation/Bloc%202/beerstock/website/img/beer.jpg') no-repeat fixed center center ;
+    background: url('/static/images/beer.jpg') no-repeat fixed center center ;
 
     font-family: Tahoma, Geneva, sans-serif;
     margin:0;

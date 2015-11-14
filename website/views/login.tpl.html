@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style/login.css">
+</head>
+<body>
+<div  class="top">
+        <a href="/home"><img src="/static/images/brewery2.png"  alt="beer" class="header"></a>
+
+    </div>
+
+%if defined('notauthorized') and notauthorized == True:
+    <h1>The login/password is not correct</h1>
+%end
+
+ <div id="bloc"> 
+</div>
+
+<form action="/login" method="post" class="login-block">
+    <h1>Se connecter</h1>
+    <input type="text" value="" placeholder="Nom d'utilisateur" id="username"  name="username" />
+    <input type="password" value="" placeholder="Mot de passe" id="password" name="password" />
+    <button>Se connecter</button>
+    <a id='w' href="/signup">Pas de compte? Inscrivez-vous ici</a>
+</form>
+
+</body>
+
+
+</html>
+
+
+
